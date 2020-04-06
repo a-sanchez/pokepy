@@ -1,69 +1,37 @@
 <html>
   <head>
-    <style>
-      html{
-        font-family: sans-serif;
+    <style type="text/css">
+      body {
+        background : blue;
+        color: white;
       }
-      body{
-        margin:0;
+      div.container {
+        max-width: 500px;
+        margin: 100px auto;
+        padding: 10px;
+        text-align: center;
       }
-      h1,h2,h3,h4,h5,h6{
-        margin: 0;
+      h3 {
+        text-transform: uppercase;
       }
-      h1{
-      font-size: 4rem;
-  }
-  h2{
-      font-size: 2rem;
-  }
-  header{
-      background-color:#d50000;
-      color: white;
-      text-align: center;
-      margin-top: 0;
-  }
-  .image-container{
-      background-color: #bdbdbd;
-      color: black;
-      justify-items: center;
-      text-align: center;
-      padding: 1rem;
-  }
-  .image-container img{
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-  }
-  main{
-      display: flex;
-      justify-content: center;
-      padding: 1rem;
-  }
-  footer{
-      background-color:#9b0000;
-      color: white;
-  }
     </style>
   </head>
   <body>
-    <header>
-        <h1>PokéPy PLUS</h1>
-    </header>
-    <div class="image-container">
-      <h2>A wild {{ pokemon.name }} has appeared!</h2>
-      <img src="{{ pokemon.image }}"/>
+    <div class="container">
+      <h3>Your random pokemon: {{ pokemon.name }}</h3>
+      <img src="{{ pokemon.image }}" />
     </div>
-    <main>  
-      <table>
+    <table>
         <tr>
-          <td><h3>Pokedex #</h3></td>
+          <td><h3>Pokedex N:</h3></td>
           <td><p>{{ pokemon.pokedex }}</p></td>
         </tr>
         <tr>
-          <td><h3>Height</h3></td>
+          <td><h3>Height:</h3></td>
           <td><p>{{ pokemon.height }}</p></td>
         </tr>
         <tr>
-          <td><h3>Weight</h3></td>
+          <td><h3>Weight:</h3></td>
           <td><p>{{ pokemon.weight }}</p></td>
         </tr>
         <tr>
@@ -71,14 +39,14 @@
           <td><p>{{ pokemon.stats }}</p></td>
         </tr>
         <tr>
-          <td><h3>Base Stats</h3></td>
-          <td><p>{{ pokemon.height }}</p></td>
+          <td><h3>Moves:</h3></td>
+          <td><p>{{ pokemon.moves }}</p></td>
         </tr>
         <tr>
-          <td><h3>Types</h3></td>
+          <td><h3>Slot</h3></td>
           <td><p>{{ pokemon.types }}</p></td>
         </tr>
-      </table>
-    </main>
+
+    </table>
   </body>
 </html>
