@@ -24,8 +24,6 @@ class PokeAPI(object):
             'evolution-chain':data.get('evolution-chain'),
             'item':data.get('item'),
             'generation': data.get('generation')
-            
-
         }
 
 
