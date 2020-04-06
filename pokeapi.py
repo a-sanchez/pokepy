@@ -20,7 +20,7 @@ class PokeAPI(object):
             'type': data.get('type'),
             'nature': data.get ('nature'),
             'region': data.get('region'),
-            'move': data.get('move').
+            'move': data.get('move'),
             'evolution-chain':data.get('evolution-chain'),
             'item':data.get('item'),
             'generation': data.get('generation')
