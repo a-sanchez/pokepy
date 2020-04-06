@@ -13,8 +13,19 @@ class PokeAPI(object):
         data = r.json()
 
         return {
+            'id':data,get('id'),
             'name': data.get('name'),
             'image': data.get('sprites', {}).get('front_default'),
+            'ability': data.get ('ability'),
+            'type': data.get('type'),
+            'nature': data.get ('nature'),
+            'region': data.get('region'),
+            'move': data.get('move').
+            'evolution-chain':data.get('evolution-chain'),
+            'item':data.get('item'),
+            'generation': data.get('generation')
+            
+
         }
 
 
