@@ -23,7 +23,5 @@ class PokeAPI(object):
             'species':data.get('species',{}).get('name'),
             'stats':data.get('stats',{}).get('base_stat'),
             'order':data.get('order')
+}
 
-
-# api = PokeAPI()
-# print(json.dumps(api.getPokemon(randrange(10)), indent=2))
