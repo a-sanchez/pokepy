@@ -2,8 +2,8 @@
   <head>
     <style type="text/css">
       body {
-        background: black;
-        color: white;
+        background: rgb(247, 13, 13);
+        color: black
       }
       div.container {
         max-width: 500px;
@@ -18,8 +18,17 @@
   </head>
   <body>
     <div class="container">
-      <h3>Your random pokemon: {{ pokemon.name }}</h3>
-      <img src="{{ pokemon.image }}" />
+      <head>POKEMON </head> 
+      <img src="{{ pokemon.image }}"/>
+      <table>Your random pokemon: {{ pokemon.name },
+                                  {pokemon.ability},
+                                  {pokemon.type},
+                                  {pokemon.nature},
+                                  {pokemon.region},
+                                  {pokemon.move},
+                                  {pokemon.evolution-chain},
+                                  {pokemon.item},
+                                  {pokemon.generation}}</table3>
     </div>
   </body>
 </html>
