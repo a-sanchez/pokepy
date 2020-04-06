@@ -16,15 +16,13 @@ class PokeAPI(object):
             'image': data.get('sprites', {}).get('front_default'),
             'id':data.get('id'),
             'name': data.get('name'),
-            'ability': data.get ('ability'),
-            'type': data.get('type'),
-            'nature': data.get ('nature'),
-            'region': data.get('region'),
-            'move': data.get('move'),
-            'evolution-chain':data.get('evolution-chain'),
-            'item':data.get('item'),
-            'generation': data.get('generation')
-        }
+            'abilities': data.get ('abilities'),
+            'height': data.get('heigth'),
+            'weight': data.get('weight'),
+            'moves': data.get('moves',{}).get('name'),
+            'species':data.get('species',{}).get('name'),
+            'stats':data.get('stats',{}).get('base_stat'),
+            'order':data.get('order')
 
 
 # api = PokeAPI()
