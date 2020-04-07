@@ -20,7 +20,7 @@ class PokeAPI(object):
             'weight': data.get('weight'),
             'image': data.get('sprites', {}).get('front_default'),
             'stats': [i.get('stat',{}).get('name') for i in data.get('stats')],
-            'base_experiencie': data.get('base_experiencie'),
+            'game_indices': [i.get('version',{}).get('name') for i in data.get('game_indices')],
             'types': [i.get('type',{}).get('name') for i in data.get('types')]
             
 
