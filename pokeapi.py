@@ -14,7 +14,7 @@ class PokeAPI(object):
 
         return {
             'pokedex': data.get('id'),            
-            'order': data.get('order')
+            'order': data.get('order'),
             'name': data.get('name'),
             'height': data.get('height'),
             'weight': data.get('weight'),
