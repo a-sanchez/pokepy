@@ -18,7 +18,7 @@ class PokeAPI(object):
             'height': data.get('height'),
             'weight': data.get('weight'),
             'image': data.get('sprites', {}).get('front_default'),
-            'stats': ,[i.get('stats',{}).get('base_stat')for i in data.get('stats')]
+            'stats': [i.get('stats',{}).get('base_stat') for i in data.get('stats')],
             'base_experiencie': data.get('base_experiencie'),
-            'types': [i.get('type',{}).get('name')for i in data.get('types')]
+            'types': [i.get('type',{}).get('name') for i in data.get('types')]
 }
